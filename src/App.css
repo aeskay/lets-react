@@ -1,38 +1,126 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #f3f1f1;
+  font-family: 'Raleway', sans-serif;
+  color: #888;
+  font-size: 1.1em;
+}
+.headText {
+  font-family: 'Langar', cursive;
+  color: #222222;
+  font-weight: bold;
+  color: #444;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  color: #eee;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navDiv {
+  background-color: #444;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-navs li {
+  display: inline-block;
+  margin: 0px 5px 0px 5px;
 }
-
-.App-link {
-  color: #61dafb;
+.firstSection {
+  height: 60vh;
+  background: #444;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mainText {
+  margin-top: -2rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Langar', cursive;
+  color: #222222;
+  font-weight: bold;
+  color: #444;
+  text-align: center;
+  color: #eee;
+  font-size: 3rem;
+}
+.subText {
+  font-family: 'Raleway', sans-serif;
+  color: #888;
+  font-size: 1.1em;
+  color: #ccc;
+  font-size: 1.5rem;
+}
+.mainButton {
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  border: 1px solid #eee;
+  text-transform: uppercase;
+  color: #eee;
+  background: transparent;
+  font-weight: bold;
+}
+.mainButton:hover {
+  background: #333;
+  transition: 0.6s ease-in;
+}
+.menuBtn {
+  border: 1px solid #eee;
+  text-transform: uppercase;
+  color: #eee;
+  background: transparent;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 0.5rem 1.2rem;
+}
+.menuBtn:hover {
+  background: #333;
+  transition: 0.6s ease-in;
+}
+.moreButton {
+  border: 1px solid #eee;
+  text-transform: uppercase;
+  color: #eee;
+  background: transparent;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  padding: 0.6rem 2rem;
+  font-size: 1rem;
+  color: #444;
+  border-color: #444;
+}
+.moreButton:hover {
+  background: #333;
+  transition: 0.6s ease-in;
+}
+.moreButton:hover {
+  color: #eee;
+}
+.section {
+  padding: 5rem 1rem;
+}
+.viewMoreButton {
+  border: 1px solid #eee;
+  text-transform: uppercase;
+  color: #eee;
+  background: transparent;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  background-color: #444;
+}
+.viewMoreButton:hover {
+  background: #333;
+  transition: 0.6s ease-in;
+}
+.viewMoreButton:hover {
+  background-color: transparent;
+  color: #444;
+  border: 1px solid #444;
+}
+.soc-links a {
+  color: #d8d8d8;
+}
+.soc-links a:hover {
+  color: #707070;
+}
+.soc-links a i {
+  font-size: 1.5rem;
 }

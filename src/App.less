@@ -1,0 +1,126 @@
+// out: App.css
+
+.headFont(){
+    font-family: 'Langar', cursive;
+    color: #222222; 
+    font-weight: bold;
+}
+
+.button(){
+    border: 1px solid #eee;
+    text-transform: uppercase;
+    color: #eee;
+    background: transparent;
+    font-weight: bold;
+    &:hover{
+        background: #333;
+        transition: 0.6s ease-in;
+    }
+}
+
+.bodyFont(){
+    font-family: 'Raleway', sans-serif;
+    color: #888;
+    font-size: 1.1em;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(243, 241, 241);
+    .bodyFont();
+}
+
+.headText{
+    .headFont();
+    color: #444;
+    text-align: center;
+}
+
+.logo{
+    color: #eee
+}
+.navDiv{
+    background-color: #444;
+}
+
+.navbar-navs li{
+    display: inline-block;
+    margin: 0px 5px 0px 5px;
+}
+
+.firstSection{
+    height: 60vh;
+    background: #444;
+
+}
+
+.mainText{
+    margin-top: -2rem;
+    margin-bottom: 1.5rem;
+    .headText();
+    color: #eee;
+    font-size: 3rem;
+}
+
+.subText{
+    .bodyFont();
+    color: #ccc;
+    font-size: 1.5rem;
+}
+
+.mainButton{
+    border-radius: 0.5rem;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    .button();
+}
+
+.menuBtn{
+    .button();
+    font-size: 0.9rem;
+    padding: 0.5rem 1.2rem;
+}
+
+.moreButton{
+    .button();
+    border-radius: 0.5rem;
+    padding: 0.6rem 2rem;
+    font-size: 1rem;
+    color: #444;
+    border-color: #444;
+    &:hover{
+        color: #eee
+    }
+}
+
+.section{
+    padding: 5rem 1rem;
+
+}
+
+.viewMoreButton{
+    .button();
+    border-radius: 0.5rem;
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+    background-color: #444;
+    &:hover{
+        background-color: transparent;
+        color: #444;
+        border: 1px solid #444;
+    }
+    
+}
+
+.soc-links a{
+    color:rgb(216, 216, 216);
+    &:hover{
+        color:rgb(112, 112, 112);
+    }
+    i{
+        font-size: 1.5rem;
+    }
+}
