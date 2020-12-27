@@ -11,7 +11,7 @@ export class Services extends Component {
     render() { 
         return (
             <React.Fragment>
-                <div style={{padding: '4rem 4rem'}}>  
+                <div style={{padding: '4rem 1.3rem'}}>  
                     <h2 className="headText text-center" style={{padding: "10px 0px"}}>Our Services</h2>   
                     <div className="row">
                         <SiteConsumer>
