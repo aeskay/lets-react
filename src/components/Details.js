@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {SiteConsumer} from '../context';
-import NavBar from './NavBar';
 import Footer from './Footer';
 
 export class Details extends Component {
@@ -10,7 +9,6 @@ export class Details extends Component {
                 <SiteConsumer>
                     {(value)=>{
                         const {
-                            id,
                             img,
                             title,
                             info

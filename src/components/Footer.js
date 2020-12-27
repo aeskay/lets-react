@@ -7,10 +7,10 @@ export default function Footer() {
         <h4 className="font-red py-3">Where would you like to contact me?</h4>
         <div className="mt-6">
             <span className="soc-links">
-                <a target="_blank" href="https://www.facebook.com/alalade.samuelsambluez"><i className="fa fa-facebook mx-3"></i></a>
-                <a target="_blank" href="https://www.twitter/iamaeskay"><i className="fa fa-twitter mx-3"></i></a>
-                <a target="_blank" href="https://www.instagram/aeskay"><i className="fa fa-instagram mx-3"></i></a>
-                <a target="_blank" href="https://wa.me/+2348133355944"><i className="fa fa-whatsapp mx-3"></i></a>  
+                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/alalade.samuelsambluez"><i className="fa fa-facebook mx-3"></i></a>
+                <a target="_blank" rel="noreferrer" href="https://www.twitter/iamaeskay"><i className="fa fa-twitter mx-3"></i></a>
+                <a target="_blank" rel="noreferrer" href="https://www.instagram/aeskay"><i className="fa fa-instagram mx-3"></i></a>
+                <a target="_blank" rel="noreferrer" href="https://wa.me/+2348133355944"><i className="fa fa-whatsapp mx-3"></i></a>  
             </span> 
         </div>
     </div>

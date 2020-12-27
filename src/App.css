@@ -124,3 +124,31 @@ body {
 .soc-links a i {
   font-size: 1.5rem;
 }
+.likeIcon {
+  color: #eee;
+  text-shadow: 0 0 2px #000;
+  font-size: 25px;
+  cursor: pointer;
+}
+.likeIcon:hover {
+  text-shadow: 0 0 16px #08d63c, 0 0 5px #067021;
+}
+.dislikeIcon {
+  color: #eee;
+  text-shadow: 0 0 2px #000;
+  font-size: 25px;
+  cursor: pointer;
+}
+.dislikeIcon:hover {
+  text-shadow: 0 0 16px #d60808, 0 0 5px #f00b0b;
+}
+.likeSpan {
+  position: relative;
+  left: 15px;
+  top: 5px;
+}
+.dislikeSpan {
+  position: relative;
+  right: 15px;
+  top: 5px;
+}
