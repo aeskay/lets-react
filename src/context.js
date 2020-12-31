@@ -7,7 +7,9 @@ class SiteProvider extends Component {
         services: [],
         detailService: detailService,
         like: [0,0,0,0,0,0,0,0],
-        dislike: [0,0,0,0,0,0,0,0]
+        dislike: [0,0,0,0,0,0,0,0],
+        liked: false,
+        disliked: false
     }
 
     componentDidMount (){
@@ -60,8 +62,22 @@ class SiteProvider extends Component {
     handleDislike = (id) => {
         let tempServices = [...this.state.services];
         let index = tempServices.indexOf(this.getId(id));
+        let dislikeBtn = document.getElementById('dislikeBtn');
 
-        tempServices[index].dislike = tempServices[index].dislike+1;
+        if(!this.state.disliked){
+            tempServices[index].dislike = 1;
+            this.setState({
+                disliked: true
+            })
+            dislikeBtn.classList.add('red');
+        } else {
+            tempServices[index].dislike = 0;
+            this.setState({
+                disliked: false
+            })
+            dislikeBtn.classList.remove('red');
+        }
+        
         //console.log(service);
         this.setState(()=>{
             return { 
@@ -76,8 +92,21 @@ class SiteProvider extends Component {
     handleLike = (id) => {
         let tempServices = [...this.state.services];
         let index = tempServices.indexOf(this.getId(id));
-
-        tempServices[index].like = tempServices[index].like+1;
+        let likeBtn = document.getElementById('likeBtn');
+        
+        if(!this.state.liked){
+            tempServices[index].like = 1;
+            this.setState({
+                liked: true
+            })
+            likeBtn.classList.add('green');
+        } else {
+            tempServices[index].like = 0;
+            this.setState({
+                liked: false
+            })
+            likeBtn.classList.remove('green');
+        }
         //console.log(service);
         this.setState(()=>{
             return { 

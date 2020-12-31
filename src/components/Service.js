@@ -19,6 +19,8 @@ export default class Service extends Component {
                     {value=>{
                         const {handleDislike, handleLike} = value;
                         
+                        
+                        
                         return(
                         <div className="col-9 mx-auto col-md-6 col-lg-3 my-3 " onClick={() =>value.handleDetail(id)}>
                             <div className=" border  text-center pb-3 br2 shadow-4">
@@ -26,8 +28,8 @@ export default class Service extends Component {
                                 <h5 className="text-center font-weight-bold py-3 text-dark">{title}</h5>
                                 <p className="text-center" style={{fontSize: "0.9rem", padding: "0rem 0.5rem"}}>{summary}...</p>
                                 {/* <Dislike/> */}
-                                <span className="dislikeSpan" onClick={() =>handleDislike(id)}>
-                                    <i className="fa fa-thumbs-down dislikeIcon"></i>
+                                <span className="dislikeSpan" onClick={()=>handleDislike(id)}>
+                                    <i className="fa fa-thumbs-down dislikeIcon" id="dislikeBtn"></i>
                                     <span style={{color: '#444', fontSize: '20px', marginLeft: '3px'}}>
                                         {value.dislike[newId]}
                                     </span>
@@ -36,7 +38,7 @@ export default class Service extends Component {
                                     <button className="moreButton">Read More</button>
                                 </Link>
                                 <span className="likeSpan" onClick={() =>handleLike(id)}>
-                                    <i className="fa fa-thumbs-up likeIcon"></i>
+                                    <i className="fa fa-thumbs-up likeIcon" id="likeBtn"></i>
                                     <span style={{color: '#444', fontSize: '20px', marginLeft: '3px'}}>
                                         {value.like[newId]}
                                     </span>
