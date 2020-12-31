@@ -6,6 +6,8 @@ export default class Service extends Component {
     render() {
         const {id, img, title, info} = this.props.service; 
         let newId = id-1;
+        let idLike= `${id}like`
+        let iddislike= `${id}dislike`
 
         let sumArr = info.split('');
         let summ = []
@@ -29,7 +31,7 @@ export default class Service extends Component {
                                 <p className="text-center" style={{fontSize: "0.9rem", padding: "0rem 0.5rem"}}>{summary}...</p>
                                 {/* <Dislike/> */}
                                 <span className="dislikeSpan" onClick={()=>handleDislike(id)}>
-                                    <i className="fa fa-thumbs-down dislikeIcon" id="dislikeBtn"></i>
+                                    <i className="fa fa-thumbs-down dislikeIcon" id={iddislike}></i>
                                     <span style={{color: '#444', fontSize: '20px', marginLeft: '3px'}}>
                                         {value.dislike[newId]}
                                     </span>
@@ -38,7 +40,7 @@ export default class Service extends Component {
                                     <button className="moreButton">Read More</button>
                                 </Link>
                                 <span className="likeSpan" onClick={() =>handleLike(id)}>
-                                    <i className="fa fa-thumbs-up likeIcon" id="likeBtn"></i>
+                                    <i className="fa fa-thumbs-up likeIcon" id={idLike}></i>
                                     <span style={{color: '#444', fontSize: '20px', marginLeft: '3px'}}>
                                         {value.like[newId]}
                                     </span>

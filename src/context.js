@@ -62,7 +62,7 @@ class SiteProvider extends Component {
     handleDislike = (id) => {
         let tempServices = [...this.state.services];
         let index = tempServices.indexOf(this.getId(id));
-        let dislikeBtn = document.getElementById('dislikeBtn');
+        let dislikeBtn = document.getElementById(`${id}dislike`);
 
         if(!this.state.disliked){
             tempServices[index].dislike = 1;
@@ -92,7 +92,7 @@ class SiteProvider extends Component {
     handleLike = (id) => {
         let tempServices = [...this.state.services];
         let index = tempServices.indexOf(this.getId(id));
-        let likeBtn = document.getElementById('likeBtn');
+        let likeBtn = document.getElementById(`${id}like`);
         
         if(!this.state.liked){
             tempServices[index].like = 1;
